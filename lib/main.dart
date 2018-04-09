@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main(){
+  runApp(new MaterialApp(
+    title: "Hello Flutter",
+    home: MyApp(),
+  ));
+}
 
 class MyApp extends StatelessWidget {
 
@@ -8,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-
+      appBar: new AppBar(
+        title: new Text("Ini AppBar"),
+      ),
+      body: new Text("Hello World"),
     );
   }
 }
